@@ -112,7 +112,7 @@ func renderTable(symbolPriceList []*SymbolPrice, writer *uilive.Writer) {
 	table.SetAutoFormatHeaders(false)
 	table.SetAutoWrapText(false)
 	headers := []string{color.YellowString("Symbol"), color.YellowString("Price"),
-		color.YellowString("%Change(1h)"), color.YellowString("%Change(24h)"),
+		color.YellowString("% 15 "), color.YellowString("% 1"),
 		color.YellowString("Source"), color.YellowString("Updated")}
 	table.SetHeader(headers)
 	table.SetRowLine(true)
